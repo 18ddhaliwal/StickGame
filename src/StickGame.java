@@ -6,7 +6,12 @@ public class StickGame {
         numRounds = 1000;
     }
     public void round(){
-        for (int i = 0; i < players.length; )
+        for (int i = 0; i < players.length; i++){
+            for(int j = i+1; j < players.length; j++){
+                playMatch(players[i], players[j]);
+            }
+
+        }
     }
 
 
